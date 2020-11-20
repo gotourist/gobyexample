@@ -8,9 +8,9 @@ func main() {
 	messages <- "buffered"
 	messages <- "channel"
 
-	a := 1
-	b := 2
+	//a := messages
+	//b := messages
 
-	fmt.Println(a)
-	fmt.Println(b)
+	fmt.Println(<-messages)
+	fmt.Println(<-messages)
 }
